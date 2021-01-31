@@ -1,9 +1,10 @@
 project "ImGui"
 	kind "StaticLib"
 	language "C++"
+	toolset ("v142")
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
+	objdir ("bin-temp/" .. outputDir .. "/%{prj.name}")
 
 	files
 	{
@@ -18,6 +19,19 @@ project "ImGui"
 		"imstb_truetype.h",
 		"imgui_demo.cpp"
 	}
+
+	libdirs
+    {        
+        "..//SFML-2.0/lib",
+    }
+
+
+	includedirs
+    {
+        "../SFML-2.0/include",
+        "../imgui",
+        "../imgui-sfml",
+    }
 
 	filter "system:windows"
 		systemversion "latest"
@@ -34,6 +48,31 @@ project "ImGui"
 		runtime "Debug"
 		symbols "on"
 
+		links
+		{
+			"sfml-graphics-s-d.lib",
+			"sfml-window-s-d.lib",
+			"sfml-system-s-d.lib"
+		}
+
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
+
+		links
+		{
+			"sfml-graphics-s.lib",
+            "sfml-window-s.lib",
+            "sfml-system-s.lib",
+		}
+
+	filter "configurations:Ship"
+		runtime "Release"
+		optimize "On"
+
+        links
+        {
+            "sfml-graphics-s.lib",
+            "sfml-window-s.lib",
+            "sfml-system-s.lib"
+		}
