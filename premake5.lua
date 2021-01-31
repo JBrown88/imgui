@@ -45,6 +45,7 @@ project "ImGui"
 		staticruntime "On"
 
 	filter "configurations:Debug"
+		buildoptions "/MDd"
 		runtime "Debug"
 		symbols "on"
 
@@ -52,10 +53,12 @@ project "ImGui"
 		{
 			"sfml-graphics-s-d.lib",
 			"sfml-window-s-d.lib",
-			"sfml-system-s-d.lib"
+			"sfml-system-s-d.lib",
+			"opengl32.lib",
 		}
 
 	filter "configurations:Release"
+		buildoptions "/MD"
 		runtime "Release"
 		optimize "on"
 
@@ -63,10 +66,12 @@ project "ImGui"
 		{
 			"sfml-graphics-s.lib",
             "sfml-window-s.lib",
-            "sfml-system-s.lib",
+			"sfml-system-s.lib",
+			"opengl32.lib",
 		}
 
 	filter "configurations:Ship"
+		buildoptions "/MD"
 		runtime "Release"
 		optimize "On"
 
@@ -74,5 +79,6 @@ project "ImGui"
         {
             "sfml-graphics-s.lib",
             "sfml-window-s.lib",
-            "sfml-system-s.lib"
+			"sfml-system-s.lib",
+			"opengl32.lib",
 		}
