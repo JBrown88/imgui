@@ -22,7 +22,7 @@ project "ImGui"
 
 	libdirs
     {        
-        "..//SFML-2.0/lib",
+        "../SFML-2.0/lib",
     }
 
 
