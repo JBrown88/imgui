@@ -59,3 +59,13 @@ Makefile
 # Visual Studio files and folder
 *.sln
 *.vcxproj*
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.dll.recipe
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.idb
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.lib.recipe
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/CL.command.1.tlog
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/CL.read.1.tlog
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/CL.write.1.tlog
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/ImGui.lastbuildstate
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/Lib-link.read.1.tlog
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/Lib-link.write.1.tlog
+/bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/Lib.command.1.tlog
