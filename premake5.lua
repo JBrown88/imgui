@@ -32,7 +32,7 @@ project "ImGui"
 
 	includedirs
     {
-        --"../SFML-2.0/include",
+       -- "../SFML-2.0/include",
         "../imgui",
         --"../imgui-sfml",
     }
