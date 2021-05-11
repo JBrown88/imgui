@@ -18,23 +18,23 @@ project "ImGui"
 		"imstb_textedit.h",
 		"imstb_truetype.h",
 		"imgui_demo.cpp",
-		--"examples/imgui_impl_dx12.h",
-		--"examples/imgui_impl_dx12.cpp",
-		--"examples/imgui_impl_win32.h",
-		--"examples/imgui_impl_win32.cpp",
+		-- "examples/imgui_impl_dx12.h",
+		-- "examples/imgui_impl_dx12.cpp",
+		-- "examples/imgui_impl_win32.h",
+		-- "examples/imgui_impl_win32.cpp",
 	}
 
 	libdirs
     {        
-        "../SFML-2.0/lib",
+        --"../SFML-2.0/lib",
     }
 
 
 	includedirs
     {
-        "../SFML-2.0/include",
+        --"../SFML-2.0/include",
         "../imgui",
-        "../imgui-sfml",
+        --"../imgui-sfml",
     }
 
 	filter "system:windows"
@@ -55,9 +55,9 @@ project "ImGui"
 
 		links
 		{
-			"sfml-graphics-s-d.lib",
-			"sfml-window-s-d.lib",
-			"sfml-system-s-d.lib",
+			--"sfml-graphics-s-d.lib",
+			--"sfml-window-s-d.lib",
+			--"sfml-system-s-d.lib",
 			"opengl32.lib",
 		}
 
@@ -68,9 +68,9 @@ project "ImGui"
 
 		links
 		{
-			"sfml-graphics-s.lib",
-            "sfml-window-s.lib",
-			"sfml-system-s.lib",
+			--"sfml-graphics-s.lib",
+            --"sfml-window-s.lib",
+			--"sfml-system-s.lib",
 			"opengl32.lib",
 		}
 
@@ -81,8 +81,8 @@ project "ImGui"
 
         links
         {
-            "sfml-graphics-s.lib",
-            "sfml-window-s.lib",
-			"sfml-system-s.lib",
+            --"sfml-graphics-s.lib",
+            --"sfml-window-s.lib",
+			--"sfml-system-s.lib",
 			"opengl32.lib",
 		}
