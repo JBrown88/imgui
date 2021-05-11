@@ -50,8 +50,8 @@ examples/example_sdl_opengl3/example_sdl_opengl3
 
 # Project-specific
 # Directories
-bin
-bin-temp
+bin/
+bin-temp/
 
  # Files
 Makefile 
