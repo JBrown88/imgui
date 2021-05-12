@@ -6,10 +6,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="examples\imgui_impl_dx12.h">
-      <Filter>examples</Filter>
-    </ClInclude>
-    <ClInclude Include="examples\imgui_impl_win32.h">
+    <ClInclude Include="examples\imgui_impl_glfw.h">
       <Filter>examples</Filter>
     </ClInclude>
     <ClInclude Include="imconfig.h" />
@@ -20,10 +17,7 @@
     <ClInclude Include="imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="examples\imgui_impl_dx12.cpp">
-      <Filter>examples</Filter>
-    </ClCompile>
-    <ClCompile Include="examples\imgui_impl_win32.cpp">
+    <ClCompile Include="examples\imgui_impl_glfw.cpp">
       <Filter>examples</Filter>
     </ClCompile>
     <ClCompile Include="imgui.cpp" />

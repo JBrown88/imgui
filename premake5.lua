@@ -25,16 +25,12 @@ project "ImGui"
 	}
 
 	libdirs
-    {        
-        --"../SFML-2.0/lib",
+    {   
     }
-
 
 	includedirs
     {
-        --"../SFML-2.0/include",
         "../imgui",
-        --"../imgui-sfml",
     }
 
 	filter "system:windows"
@@ -55,9 +51,6 @@ project "ImGui"
 
 		links
 		{
-			--"sfml-graphics-s-d.lib",
-			--"sfml-window-s-d.lib",
-			--"sfml-system-s-d.lib",
 			"opengl32.lib",
 		}
 
@@ -68,9 +61,6 @@ project "ImGui"
 
 		links
 		{
-			--"sfml-graphics-s.lib",
-            --"sfml-window-s.lib",
-			--"sfml-system-s.lib",
 			"opengl32.lib",
 		}
 
@@ -81,8 +71,5 @@ project "ImGui"
 
         links
         {
-            --"sfml-graphics-s.lib",
-            --"sfml-window-s.lib",
-			--"sfml-system-s.lib",
 			"opengl32.lib",
 		}
