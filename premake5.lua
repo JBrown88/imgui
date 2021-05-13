@@ -41,8 +41,7 @@ project "ImGui"
 		cppdialect "C++17"
 		staticruntime "On"
 
-	filter "configurations:Debug"
-		buildoptions "/MDd"
+	filter "configurations:Debug"		
 		runtime "Debug"
 		symbols "on"
 
@@ -51,8 +50,7 @@ project "ImGui"
 			"opengl32.lib",
 		}
 
-	filter "configurations:Release"
-		buildoptions "/MD"
+	filter "configurations:Release"		
 		runtime "Release"
 		optimize "on"
 
@@ -61,8 +59,7 @@ project "ImGui"
 			"opengl32.lib",
 		}
 
-	filter "configurations:Ship"
-		buildoptions "/MD"
+	filter "configurations:Ship"		
 		runtime "Release"
 		optimize "On"
 
