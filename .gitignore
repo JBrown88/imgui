@@ -69,3 +69,5 @@ Makefile
 /bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/Lib-link.read.1.tlog
 /bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/Lib-link.write.1.tlog
 /bin-temp/Debug-windows-x86_64/ImGui/ImGui.tlog/Lib.command.1.tlog
+bin-temp
+bin-temp
