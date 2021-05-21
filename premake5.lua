@@ -33,7 +33,7 @@ project "ImGui"
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
-		staticruntime "On"
+		staticruntime "on"
 
 	filter "system:linux"
 		pic "On"
@@ -61,7 +61,7 @@ project "ImGui"
 
 	filter "configurations:Ship"		
 		runtime "Release"
-		optimize "On"
+		optimize "on"
 
         links
         {
